@@ -1,0 +1,148 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Introduction to LaTeX }
+
+\author{Yash Jain, under the guidance of Pranav Sir}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{List the use of 10 common tags in LaTeX.}
+\label{sec:introduction}
+
+\begin{description}
+\item[begin{document}]: Starts the actual text of a document. It is used in every document. Every begin tag should have a corresponding end tag.
+\item[usepackage]: Used for importing packages that are predefined.
+\item[begin{description}]: Starts a description. Generally used when describing some attributes or definitions.
+\item[dots]: Outputs three dots like ... Used to show a sequence or a finite number of terms.
+\item[begin{bibliography}]: Creates a bibliography.
+\item[begin{enumerate}]: Starts a numbered list.
+\item[begin{itemize}]: Starts a bullet list. 
+\item[int]: Used to write integrals in LaTeX.
+\item[frac]: Used to write fractions in LaTeX.
+\item[textbf,textit]: Used to make the text in bold and italics respectively.
+\end{description}
+
+\section{Explain Version Control in LaTeX.}
+\label{sec:theory}
+Version Control-also called Revision or Source Control, manages your ﬁles ,directories, and the changes made to them. For this all created revisions are stored in a repository which is a special kind of database. Every time the source code is revised it should be committed to the repository where it is saved in a compact differential form together with a log message describing the changes. The revision number is then incremented to identify the new revision.
+For using Version Control, we click on the History tab. It consists of all the versions or the changes that were made to the particular file. So it allows a proper overview of all the changes that have taken place.
+
+\section{Explain how to add collaborators in LaTeX.}
+One of the main features in Overleaf is to allow teams to edit documents simultaneously and interact in real time. This article explains how to add collaborators to your project, and also how to share a project publicly.
+To do the same we follow the following procedure :-
+\newline
+After opening your project, move your cursor to the upper right corner of the page and click the Share icon.
+\newline
+Enter your collaborator's email address in the input box that pops up. If your collaborator already has an account on Overleaf, this should be the email address they use to login to Overleaf. Right below the text box, you will see a drop-down menu where you can set the permissions the new collaborator will have: Can Edit or Read Only. Then click the button Share.
+\newline
+After adding a new collaborator, you will see the corresponding email in the list. You can remove a collaborator from this project by clicking the x.
+\newline
+Once you've added a collaborator to your project, said project will show up in your collaborator's Projects page, and the name of the owner is also displayed. Notice that the projects you own have "You" in the OWNER column. Now your collaborator can start editing the document simultaneously with you.
+\section{Creating Tables in LaTeX.}
+Use the table and tabular commands for basic tables. For example :-
+\newline
+    \begin{table}
+    \centering
+    \begin{tabular}{|l|r|}
+    \hline
+    City & Pollution \\\hline
+    Delhi & Very High \\ \hline
+    Mumbai & High \\ \hline
+    Pune & High \\ \hline
+    Jaipur & Mudium \\ \hline
+    Benguluru & Medium \\ \hline
+    \end{tabular}
+\caption{\label{tab:widgets}Table showing Subjects with their Credits.}
+\end{table}
+
+\section{Writing Mathematical equations in LaTeX.}
+
+\LaTeX{} is great at typesetting mathematics.
+\begin{equation}
+    \int_0^25\frac{1}{x^4}=log_e9
+\end{equation}
+   If f(x) = log(x) then
+\begin{equation}
+    \frac{d}{dx}f(x) = \frac{1}{x}
+\end{equation}
+
+\section{Creating Glossary in LaTeX.}
+\begin{description}
+
+\item[Defining glossary entries] :
+To use an entry from a glossary you first need to define it. There are few ways to define an entry depending on what you define and how it is going to be used.
+Note that a defined entry won't be included in the printed glossary unless it is used in the document. This enables you to create a glossary of general terms and just include it in all your documents.
+
+\item[Defining terms] : 
+To define a term in glossary you use the newglossaryentry macro:
+\\newglossaryentry{<label>}{<settings>}
+
+<label> is a unique label used to identify an entry in glossary, 
+<settings> are comma separated key=value pairs used to define an entry.
+
+For example, to define a computer entry:
+
+\newglossaryentry{computer}
+{
+  name=computer, description={is a programmable machine that receives input, stores and manipulates data, and provides output in a useful format}
+}
+
+\end{description} 
+
+\section{Inserting figures in LaTeX.}
+First you have to upload the image file (jpeg, png or pdf) from your computer to writeLaTeX using the upload link the project menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure in this section for an example.
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{Mettaliceffect.jpg}
+\caption{\label{fig:Enthusia}This photo was uploaded to writeLaTeX via the project menu.}
+\end{figure}
+
+\section{Creating Table of Contents and list of figures.}
+Generating a table of contents can be done with a few simple commands. LaTeX will use the section headings to create the table of contents and there are commands to create a list of figures and a list of tables as well. Following is a small example code to create a table of contents of this file itself :
+use tableofcontents.
+
+
+The generation of a list of figures and tables works in the same way. It is as shown below :
+
+\begin{figure}
+  \caption{}
+\end{figure}
+
+  \listoffigures
+  \listoftables
+
+\section{Creating a bibliography in LaTeX.}
+
+\begin{bibliography}{9}
+\boldsymbol References
+\bibitem{nano3}
+Open Source Software Lab
+\newline
+\emph Veermata Jijabai Technological Institute
+\newline
+S.Y.B.Tech Information Technology
+\end{bibliography}
+
+\section{Inserting Citations in LaTeX.}
+We use the cite command to insert citations.
+Following code shows how citations are inserted in LaTeX :-
+\newline
+\cite @article{miller1993introduction,
+  title={An introduction to the fractional calculus and fractional differential equations},
+  author={Miller, Kenneth S and Ross, Bertram},
+  year={1993},
+  publisher={Wiley-Interscience}
+}
+\end{document}

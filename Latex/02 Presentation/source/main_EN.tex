@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Presentation template and short Beamer example/tutorial.
+%% Vincent Labatut 2017-19 <vincent.labatut@univ-avignon.fr>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup beamer
+\documentclass[10pt,    % default is 11pt, use 10pt for more compact slides
+%    handout,            % collapse all overlays (=animations) and video-invert console text
+    english,            % presentation language (theme supports only french & english)
+    xcolor=table,       % colors in the tables
+    envcountsect        % include section number in theorem numbers
+]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup the theme
+%\usepackage{au/sty/beamerthemeAU}         % no option at all
+\usepackage[light]{au/sty/beamerthemeAU}   % the "light" option only changes the title and section pages
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup side notes
+\usepackage{pgfpages}                                   % comment all 3 below lines to hide notes
+%\setbeameroption{show notes}                           % alternate content and note slides
+%\setbeameroption{show only notes}                      % only note slides
+%\setbeameroption{show notes on second screen=right}    % dualscreen: right, left, top, bottom
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% name of the biblatex file
+\addbibresource{biblio.bib}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% title and subtitle of the presentation (the latter is optional)
+\title[Short Title] % leave empty for no title in footer
+    {OPERATING SYSTEM  \newline Yash Jain 171080066 \newline \newline Under the Guidance of Pranav Sir }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% date of the presentation (leave empty for no date, default is today)
+\date[Short date] % leave empty for no date in footer
+    {\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% authors and their affiliations (the latter is optional)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% optional: additional logo (ex. lab)
+% \titlegraphic{\includegraphics[width=3cm,]{images/lia_logo.pdf}}
+% if you want several logos, put them in a box
+%\titlegraphic{\parbox{3cm}{\includegraphics[width=3cm,]{images/ceri_logo.pdf}\newline\includegraphics[width=3cm,]{images/lia_logo.pdf}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%% title page
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%% introduction slide
+\begin{frame}
+    \label{frm:first}
+    \frametitle{Operating System} 
+    
+    \begin{itemize}
+        \item The operating system (OS) allows users to perform the basic functions of a computer.
+        \item The OS manages all software and peripheral hardware, and accesses the central processing unit (CPU) for memory or storage purposes.
+        \item It also makes it possible for a system to simultaneously run applications.
+        \item All PCs, laptops, tablets, smartphones, and servers require an OS.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Windows 10} 
+    
+    \begin{itemize}
+        \item Windows 10 is a series of personal computer operating systems produced by Microsoft as part of its Windows NT family of operating systems.
+        \item It is the successor to Windows 8.1, and was released to manufacturing on July 15, 2015.
+        \item Windows 10 receives new builds on an ongoing basis, which are available at no additional cost to users.
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Apple iOS} 
+    
+    \begin{itemize}
+        \item iOS (formerly iPhone OS) is a mobile operating system created and developed by Apple Inc.
+        \item It is the operating system that presently powers many of the company's mobile devices, including the iPhone, iPad, and iPod Touch.
+        \item It is the second most popular mobile operating system globally after Android.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Windows 7} 
+    
+    \begin{itemize}
+        \item In contrast to Windows Vista, Windows 7 was generally praised by critics, who considered the operating system to be a major improvement over its predecessor.
+        \item Windows 7 was a major success for Microsoft; even prior to its official release, pre-order sales for 7 on the online retailer Amazon.com had surpassed previous records.
+        \item Increased performance, its more intuitive interface (with particular praise devoted to the new taskbar), fewer User Account Control popups, and other improvements made across the platform.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Android} 
+    
+    \begin{itemize}
+        \item Android is a mobile operating system developed by Google.
+        \item It is based on a modified version of the Linux kernel and other open source software.
+        \item In addition, Google has further developed Android TV for televisions.
+        \item Variants of Android are also used on game consoles, digital cameras, PCs and other electronics.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Ubuntu} 
+    
+    \begin{itemize}
+        \item Ubuntu aims to be secure by default.
+        \item User programs run with low privileges and cannot corrupt the operating system or other users' files.
+        \item For increased security, the sudo tool is used to assign temporary privileges for performing administrative tasks.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Mac OSX} 
+    
+    \begin{itemize}
+        \item macOS is the second major series of Macintosh operating systems.
+        \item The first is colloquially called the "classic" Mac OS, which was introduced in 1984.
+        \item The first desktop version, Mac OS X 10.0, was released in March 2001.
+        \item Since OS X 10.9 Mavericks, releases have been named after locations in California.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{CentOS} 
+    
+    \begin{itemize}
+        \item The first CentOS release in May 2004, numbered as CentOS version 2, was forked from RHEL version 2.1AS.
+        \item Since the release of version 7.0, CentOS officially supports only the x86-64 architecture, while versions older than 7.0-1406 also support IA-32 with Physical Address Extension (PAE).
+        \item As of December 2015, AltArch releases of CentOS 7 are available for the IA-32 architecture, Power architecture, and for the ARMv7hl and AArch64 variants of the ARM architecture.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Fedora} 
+    
+    \begin{itemize}
+        \item Fedora has a reputation for focusing on innovation, integrating new technologies early on and working closely with upstream Linux communities.
+        \item Making changes upstream instead of specifically for Fedora ensures that the changes are available to all Linux distributions.
+        \item Fedora has a relatively short life cycle: each version is usually supported for at least 13 months, where version X is supported only until 1 month after version X+2 is released and with approximately 6 months between most versions.
+    \end{itemize}
+
+
+\end{frame}
+
+\begin{frame}
+    \label{frm:second}
+    \frametitle{Debian} 
+    
+    \begin{itemize}
+        \item Debian is one of the earliest operating systems based on the Linux kernel. 
+        \item The project's work is carried out over the Internet by a team of volunteers guided by Debian Project Leader and three foundational documents: the Debian Social Contract, the Debian Constitution, and the Debian Free Software Guidelines.
+        \item New distributions are updated continually, and the next candidate is released after a time-based freeze.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{References}}
+  
+
+\begin{thebibliography}{9}
+\bibitem{wikipedia}
+Wikipedia \\
+\texttt{https://en.wikipedia.org}
+
+\bibitem{Ubuntu}
+Ubuntu \\
+\texttt{https://www.ubuntu.com}
+
+\bibitem{apple}
+Apple \\
+\texttt{https://apple.com}
+
+\bibitem{microsoft}
+Microsoft \\
+\texttt{https://www.microsoft.com}
+
+
+ 
+\end{thebibliography}
+  \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

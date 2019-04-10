@@ -1,0 +1,41 @@
+\mode<presentation>
+
+% use specific font
+\RequirePackage{fontspec}
+\setsansfont{Gilroy}[ 
+Extension = .otf,
+Path = au/fonts/,
+UprightFont = *-Light,
+BoldFont = *-Bold,
+ItalicFont = *-LightItalic,
+BoldItalicFont = *-BoldItalic
+]
+%\let\sfdefault\rmdefault
+
+% bold monospace font
+%\RequirePackage{bold-extra}                % does not seem to work (https://tex.stackexchange.com/questions/215482/how-do-i-get-texttt-with-bold-face-in-latex)
+%\RequirePackage[scaled=0.85]{beramono}     % same here
+
+
+\def\mathfamilydefault{\rmdefault}
+
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\large}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{section title}{size=\LARGE}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamerfont{highlight title}{size=\Huge,series=\bfseries}
+
+\setbeamerfont{bibliography item}{size=\footnotesize}
+\setbeamerfont{bibliography entry author}{size=\footnotesize}
+\setbeamerfont{bibliography entry title}{size=\footnotesize}
+\setbeamerfont{bibliography entry location}{size=\footnotesize}
+\setbeamerfont{bibliography entry note}{size=\footnotesize}
+\renewcommand*{\bibfont}{\footnotesize}
+
+% solid end of proof symbol
+\setbeamertemplate{qed symbol}{$\blacksquare$}
+
+\mode
+<all>
