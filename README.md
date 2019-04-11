@@ -1,4 +1,4 @@
-# OSS_LAB
+# OSS LAB
 Repo for oss tutorial under guidance for Prof. Pranav Nerulkar
 
 ## USPC FEVER
